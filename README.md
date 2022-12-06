@@ -321,10 +321,9 @@ extends:
 
 
 ---
-## Some examples: bundle size
+## Some examples: screenshot diffs
 
-- Screenshot test failures are reported in a comment in the PR.
-![](./img/gh-screenshot-fail-report.png)
+![](./img/gh-screenshot-diff.png)
 
 ---
 # Storybook
