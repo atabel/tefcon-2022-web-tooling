@@ -357,7 +357,11 @@ _backgroundSize: 120px
 
 ---
 # Storybook
-![height:120](./img/logos/storybook.png)
+<!--
+_backgroundPosition: top 32px right 32px
+_backgroundImage: url(./img/logos/storybook.png)
+_backgroundSize: 120px
+-->
 
 - Play with your components in isolation.
 - Show all the posible states of a component.
@@ -370,7 +374,11 @@ _backgroundSize: 120px
 
 ---
 # Playroom
-![](./img/logos/playroom.png)
+<!--
+_backgroundPosition: top 32px right 32px
+_backgroundImage: url(./img/logos/playroom.png)
+_backgroundSize: 360px
+-->
 
 - Build screen prototypes using your components catalog.
 - Snippets support.
@@ -406,14 +414,10 @@ _backgroundSize: 120px
 
 ---
 # Build your own tools
-
+[![bg right fit](./img/xkcd-automation.png)](https://xkcd.com/1205/)
 - If something can be automated.
 - Specially if you and your team mates do it often.
 - If it will make dev life easier or help new devs onboard faster.
-
----
-## But with caution
-[![](./img/xkcd-automation.png)](https://xkcd.com/1205/)
 
 ---
 ## Example: `yarn setup` in Novum webapp
