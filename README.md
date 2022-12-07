@@ -4,11 +4,19 @@ author: Abel Toledano
 title: Web Tooling in CTO
 paginate: true
 theme: default
-
 ---
-<!-- _paginate: false -->
+<!--
+_paginate: false
+style: |
+    section.center {
+        text-align: center;
+    }
+_class: center
+-->
 
-# **Web Tooling in CTO**
+Web Tooling in CTO
+==================
+
 ## **TefCon 2022**
 **Abel Toledano**
 
@@ -18,7 +26,7 @@ theme: default
 
 - We build the web platform used in some of the biggest apps in Telefonica
 
-![width:200](./img/apps/movistar.webp) ![width:200](./img/apps/vivo.webp) ![width:200](./img/apps/O2.webp) ![width:200](./img/apps/solar.webp)
+![width:200](./img/apps/movistar.png) ![width:200](./img/apps/vivo.png) ![width:200](./img/apps/o2.png) ![width:200](./img/apps/solar.png)
 
 - We believe in a good DX (Developer Experience) as a mean to achieve a good UX (User Experience)
 
@@ -45,16 +53,16 @@ theme: default
 
 # Testing nomenclature
 
-- **Unit testing**: testing a single unit of code in isolation
-- **Integration testing**: testing how different units of code work together
-- **Acceptance testing**: testing the web in a real browser
-  - **Screenshot testing**: Take screenshots of your webapp and compare them with the previous ones. Useful to detect visual regressions.
+- **Unit testing**: testing a single unit of code in isolation. A component, a function, etc.
+- **Integration testing**: testing how different units of code work together. Compose diferent components, for example.
+- **Acceptance testing**: testing the web in a real browser.
+  - **Screenshot testing**: Take screenshots of your web and compare them with the previous ones. Useful to detect visual regressions.
 
 ---
 
-# Unit Testing: Jest & React Testing Library
+# Unit tests: Jest, jsdom & React Testing Library
 
-![height:200](./img/logos/jest.jpg) ![height:200](./img/logos/react-testing-library.png) ![height:200](./img/logos/jsdom.svg)
+![height:200](./img/logos/jest.jpg) ![height:200](./img/logos/jsdom.svg) ![height:200](./img/logos/react-testing-library.png)
 - Run on Node simulating a browser environment (jsdom).
 - ⚡ Fast.
 
@@ -98,9 +106,12 @@ test('LogInForm', async () => {
 
 ---
 
-# Acceptance and screenshot testing (Jest with Puppeteer)
-
-![height:200](./img/logos/pptr.png)
+# Acceptance and screenshot testing: Jest & Puppeteer
+<!--
+_backgroundPosition: top 32px right 32px
+_backgroundImage: url(./img/logos/pptr.png)
+_backgroundSize: 120px
+-->
 
 - Test the web in a real browser.
 - These are the test that better resemble the way a real user uses your webapp.
@@ -155,16 +166,17 @@ test('example screenshot test', async () => {
 
 ---
 
-# Testing: Bonus tooling:
+## Testing: Bonus tooling: [Jest-runner VSCode extension](https://marketplace.visualstudio.com/items?itemName=firsttris.vscode-jest-runner)
 
-- [Jest-runner VSCode extension](https://marketplace.visualstudio.com/items?itemName=firsttris.vscode-jest-runner)
-
-![width:800](./img/vscode-jest.gif)
+![width:900](./img/vscode-jest.gif)
 
 ---
 # Static Typing: TypeScript
-![height:100](./img/logos/ts.png)
-
+<!--
+_backgroundPosition: top 32px right 32px
+_backgroundImage: url(./img/logos/ts.png)
+_backgroundSize: 120px
+-->
 - Catch bugs earlier.
 - Brings you additional safety and confidence when writing code.
 - Remove a whole category of bugs.
@@ -185,7 +197,11 @@ test('example screenshot test', async () => {
 ---
 
 # Linting: ESLint
-![height:120](./img/logos/eslint.png)
+<!--
+_backgroundPosition: top 32px right 32px
+_backgroundImage: url(./img/logos/eslint.png)
+_backgroundSize: 280px
+-->
 
 - Avoid common mistakes: `no-invalid-regexp`, `no-unsafe-negation`, `no-duplicate-case`, etc.
 - Things that TS can't catch on its own.
@@ -213,7 +229,11 @@ extends:
 ---
 
 # Code formatting: Prettier
-![height:100](./img/logos/prettier.png)
+<!--
+_backgroundPosition: top 32px right 32px
+_backgroundImage: url(./img/logos/prettier.png)
+_backgroundSize: 120px
+-->
 
 - Avoid discussions about code style.
 - Consistent code style across the team.
@@ -245,16 +265,17 @@ extends:
 ```
 ---
 # Accessibility testing: Axe
-
-![height:150](./img/logos/axe.png)
+<!--
+_backgroundPosition: top 32px right 32px
+_backgroundImage: url(./img/logos/axe.png)
+_backgroundSize: 200px
+-->
 
 - Test your webapp for accessibility issues.
 - Run it in your CI pipeline as part of acceptance tests with Puppeteer.
 - Browser extension.
 
----
-
-## More a11y testing tools:
+## More a11y tooling:
 
 - ESLint a11y plugin.
 - Write tests with react-testing-library.
@@ -263,9 +284,11 @@ extends:
 
 ---
 # Styles
-
-![height:64](./img/logos/mistica.svg)
-
+<!--
+_backgroundPosition: top 32px right 32px
+_backgroundImage: url(./img/logos/mistica.svg)
+_backgroundSize: 300px
+-->
 - Telefonica Design System.
 - Big set of React components ready to use.
 - Consistent styles and UI/UX patterns across Telefonica Apps.
@@ -288,8 +311,11 @@ extends:
 
 ---
 # Monitoring: Sentry
-
-![height:100](./img/logos/sentry.png)
+<!--
+_backgroundPosition: top 32px right 32px
+_backgroundImage: url(./img/logos/sentry.png)
+_backgroundSize: 120px
+-->
 - Catch errors in production.
 - Any uncaught exception and unhandled Promise error is reported to Sentry.
 - Explicit logs: for example, when an unexpected response is received from API.
@@ -300,7 +326,11 @@ extends:
 ---
 
 # GitHub Actions Workflows
-![height:120](./img/logos/gh-actions.png)
+<!--
+_backgroundPosition: top 32px right 32px
+_backgroundImage: url(./img/logos/gh-actions.png)
+_backgroundSize: 120px
+-->
 - If you want to enforce some rule (code style, formatting, linting, etc) make CI fail if it's not met.
 - Make CI failures clear and actionable.
 - Preview deployments in every PR.
@@ -404,7 +434,10 @@ extends:
 ![](./img/webapp-pages.png)
 
 ---
+## Example: WS Api inspector
+![](./img/webapp-api-extension.png)
 
+---
 # And, that's all for today. Thanks!
 # Questions?
 
