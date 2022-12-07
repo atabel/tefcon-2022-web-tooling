@@ -410,7 +410,7 @@ _backgroundSize: 360px
 
 ---
 
-![](./img/ast-explorer.png)
+[![bg fit](./img/ast-explorer.png)](https://astexplorer.net)
 
 ---
 # Build your own tools
@@ -448,7 +448,20 @@ _backgroundSize: 360px
 ---
 # References
 
-[Write tests. Not too many. Mostly integration.](https://twitter.com/rauchg/status/807626710350839808)
-[Test Pyramid](https://martinfowler.com/bliki/TestPyramid.html)
-[The Testing Trophy and Testing Classifications](https://kentcdodds.com/blog/the-testing-trophy-and-testing-classifications)
+- [Web Core Team](https://confluence.tid.es/pages/viewpage.action?pageId=58235409)
+- [Test Pyramid](https://martinfowler.com/bliki/TestPyramid.html)
+- [The Testing Trophy and Testing Classifications](https://kentcdodds.com/blog/the-testing-trophy-and-testing-classifications)
+- [Testing Library](https://testing-library.com/)
+- [Jest](https://jestjs.io/)
+- [@telefonica/acceptance-testing](https://www.npmjs.com/package/@telefonica/acceptance-testing)
+- [@telefonica/mistica](https://github.com/Telefonica/mistica-web)
+- [@telefonica/eslint-config](https://www.npmjs.com/package/@telefonica/eslint-config)
+- [@telefonica/prettier-config](https://www.npmjs.com/package/@telefonica/prettier-config)
+
 ---
+# References
+
+- [CR Extension for image diffs](https://github.com/Telefonica/cr-extension)
+- [Storybook](https://storybook.js.org/)
+- [Playroom](https://github.com/seek-oss/playroom)
+- [Sentry](https://sentry.io/)
