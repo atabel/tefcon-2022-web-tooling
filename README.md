@@ -17,7 +17,7 @@ _class: center
 Web Tooling in CTO
 ==================
 
-## **TEFCON 2022**
+## **TEFCon 2022**
 
 **Abel Toledano**
 
