@@ -17,8 +17,11 @@ _class: center
 Web Tooling in CTO
 ==================
 
-## **TefCon 2022**
+## **TEFCON 2022**
+
 **Abel Toledano**
+
+### Slides: bit.ly/cto-web-tooling
 
 ---
 
@@ -442,8 +445,13 @@ _backgroundSize: 360px
 ![](./img/webapp-api-extension.png)
 
 ---
+<!--
+_class: center
+-->
 # And, that's all for today. Thanks!
 # Questions?
+
+### Slides: bit.ly/cto-web-tooling
 
 ---
 # References
