@@ -243,7 +243,7 @@ _backgroundSize: 120px
 - Easy search and replace code.
 
 ## Recomendations
-- Configure in your editor to format on save.
+- Configure your editor to format on save.
 - Configure pre-commit hook.
 - Make CI fail if code is not formatted.
 
@@ -335,6 +335,7 @@ _backgroundImage: url(./img/logos/gh-actions.png)
 _backgroundSize: 120px
 -->
 - If you want to enforce some rule (code style, formatting, linting, etc) make CI fail if it's not met.
+- Invest effort in making CI builds fast.
 - Make CI failures clear and actionable.
 - Preview deployments in every PR.
     - Helps reviewers see the changes working.
@@ -369,6 +370,7 @@ _backgroundSize: 120px
 - Play with your components in isolation.
 - Show all the posible states of a component.
 - Configure component props using Storybook args.
+- Useful as documentation.
 - Useful for testing.
 
 ---
